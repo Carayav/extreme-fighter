@@ -11,7 +11,9 @@ package Strategys;
  * @author renenoel
  */
 public class IAgil extends Strategy { 
-        
+
+	public int danio = 75;
+
      @Override
     public int getDanio(){
        return danio;

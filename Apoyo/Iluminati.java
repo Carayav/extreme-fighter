@@ -19,7 +19,9 @@ public class Iluminati extends Apoyo{
     }
     
     @Override
-    public String golpear() { throw new UnsupportedOperationException();}
+    public String golpear() { 
+		return luchador.golpear();
+	}
     @Override
     public String patear() { throw new UnsupportedOperationException();}
     @Override

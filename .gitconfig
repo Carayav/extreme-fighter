@@ -1,0 +1,8 @@
+[user]
+	name = Claudio Araya Valenzuela
+	email = claudio.araya@alumnos.uv.cl
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto

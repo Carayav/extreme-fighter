@@ -1,5 +1,4 @@
 
-
 import Apoyo.*;
 import Strategys.Luchador;
 import Person.*;
@@ -13,7 +12,7 @@ public class FightEngine {
         int opcion;
 	        
         System.out.println("Empieza el juego!!!");
-		System.out.println("Selecciona tu luchador segun el numero: ");
+	System.out.println("Selecciona tu luchador segun el numero: ");
         System.out.println("1. Choro Portenho");
         System.out.println("2. Minero Warrior");
         System.out.println("3. Gorrion de Conchali");

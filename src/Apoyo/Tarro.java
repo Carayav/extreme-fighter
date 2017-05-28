@@ -4,10 +4,9 @@ import Strategys.Luchador;
 
 public class Tarro extends Apoyo { 
     
-    private int danioSuper = 25;
-    
     public Tarro(Luchador luchador){
         this.luchador = luchador;
+        this.danioSuper = 25;
     }
         
     public String getSpecialString() {
@@ -17,14 +16,6 @@ public class Tarro extends Apoyo {
     public int danioSpecial() {
         return luchador.danioSpecial() + danioSuper;
     }
-
-    @Override
-    public String golpear() { throw new UnsupportedOperationException();}
-    @Override
-    public String patear() { throw new UnsupportedOperationException();}
-    @Override
-    public String saltar() { throw new UnsupportedOperationException();}
-    @Override
     public void Init() { throw new UnsupportedOperationException();}
 
 }

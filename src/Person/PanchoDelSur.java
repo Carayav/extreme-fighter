@@ -1,39 +1,22 @@
 package Person;
 
-
-import Strategys.Luchador;
-import Strategys.IFuerte;
+import Strategies.IFuerte;
 
 public class PanchoDelSur extends Luchador {
 	
         public PanchoDelSur(){
-            Init();
-	}
-        @Override
+            Init("PANCHO DEL SUR!!!!", "fuerte", new IFuerte());}
+        
 	public String golpear(){
-		return("PUÑO DEL HOCICON!!!");
-	}
-	@Override
+		return("PUÑO DEL HOCICON!!!");}
+	
 	public String patear(){
-		return("PATADA SATELITEEE!!!");
-	}
+		return("PATADA SATELITEEE!!!");	}
     
-        @Override
 	public String saltar(){
-		return("JOJOI!!!");
-	}
-        
-        @Override
-        public void Init(){
-            this.strategy = new IFuerte();
-            this.setNombre("PANCHO DEL SUR!!!!");
-            this.setTipo("fuerte");  
-            this.danio = this.strategy.getDanio();            
-        }        
-        
+		return("JOJOI!!!");}
         
         public int danioSpecial(){
             return danio;
         }
-
 }

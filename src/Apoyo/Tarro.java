@@ -1,6 +1,6 @@
 package Apoyo;
 
-import Strategys.Luchador;
+import Person.Luchador;
 
 public class Tarro extends Apoyo { 
     
@@ -16,6 +16,4 @@ public class Tarro extends Apoyo {
     public int danioSpecial() {
         return luchador.danioSpecial() + danioSuper;
     }
-    public void Init() { throw new UnsupportedOperationException();}
-
 }

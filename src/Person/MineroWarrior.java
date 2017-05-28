@@ -1,40 +1,22 @@
 package Person;
 
-
-import Strategys.Luchador;
-import Strategys.IFuerte;
-
+import Strategies.IFuerte;
 
 public class MineroWarrior extends Luchador{
+    
         public MineroWarrior(){
-            Init();
-        }
-
-	
-        @Override
-        public String golpear(){
-		return("PUÑO DEL PIRQUINEROOOO!!!");
-	}
-	
-        @Override
-	public String patear(){
-		return("PATADA DEL CATEADOOOOOOR!!!");
-	}
+            Init("Minero Warrior", "fuerte", new IFuerte() );}
         
-        @Override
+        public String golpear(){
+		return("PUÑO DEL PIRQUINEROOOO!!!");}
+	
+	public String patear(){
+		return("PATADA DEL CATEADOOOOOOR!!!");}
+
 	public String saltar(){
-		return("SALTO EXPLOSIVOOOOO!!!");
-	}
-        @Override
-        public void Init(){
-            this.strategy = new IFuerte();
-            this.setNombre("Minero Warrior");
-            this.setTipo("fuerte");
-            this.danio = this.strategy.getDanio();
-        }
-                
+		return("SALTO EXPLOSIVOOOOO!!!");}
+        
         public int danioSpecial(){
             return danio;
         }
-
 }

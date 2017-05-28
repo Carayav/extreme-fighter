@@ -1,36 +1,20 @@
 package Person;
 
-
-import Strategys.Luchador;
-import Strategys.IAgil;
+import Strategies.IAgil;
 
 public class HalconDeChicureo extends Luchador{
     
 	public HalconDeChicureo(){
-            Init();
-        }
-	@Override
-	public String golpear(){
-		return("BRAZO BOOMERANG!!!");
-	}
+            Init("HALCON DE CHICUREO!!!!", "agil", new IAgil());}
 	
-	@Override
+	public String golpear(){
+		return("BRAZO BOOMERANG!!!");}
+		
         public String patear(){
-		return("PATADA DE BIEN LEJOS!!!");
-	}
+		return("PATADA DE BIEN LEJOS!!!");}
 
-	@Override
         public String saltar(){
-		return("SALTO DEL AVION!!!");
-	}
-        
-        public void Init(){
-            this.setNombre("HALCON DE CHICUREO!!!!");
-            this.setTipo("agil");    
-            this.strategy = new IAgil();
-            this.danio = this.strategy.getDanio();
-        }
-        
+		return("SALTO DEL AVION!!!");}
         
         public int danioSpecial(){
             return danio;

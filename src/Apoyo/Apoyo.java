@@ -1,6 +1,6 @@
 package Apoyo;
 
-import Strategys.Luchador;
+import Person.Luchador;
 
 public abstract class Apoyo extends Luchador{
     

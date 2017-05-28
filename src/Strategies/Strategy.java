@@ -1,9 +1,7 @@
-package Strategys;
-
-import java.util.List;
+package Strategies;
 
 public abstract class Strategy {
-    public int danio = 50;
+    protected int danio = 50;
     public abstract int getDanio();
     public abstract String AtaqueSpecial();
 }

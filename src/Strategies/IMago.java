@@ -1,15 +1,15 @@
-package Strategys;
+package Strategies;
 
 public class IMago extends Strategy { 
-    public int danio = 50;
+    
+    private final int danio = 50;
+    
     @Override
     public int getDanio(){
-       return danio;
-    } 
+       return danio;} 
     
     @Override
     public String AtaqueSpecial(){
-        return "ataque magico";
-    }
+        return "ataque magico";}
 }
 

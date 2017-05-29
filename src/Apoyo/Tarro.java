@@ -6,14 +6,16 @@ public class Tarro extends Apoyo {
     
     public Tarro(Luchador luchador){
         this.luchador = luchador;
-        this.danioSuper = 25;
+        this.danioSpecial = 25;
     }
         
+    @Override
     public String getSpecialString() {
         return luchador.getSpecialString() + " Especial Tarro";
     }
-
+    
+    @Override
     public int danioSpecial() {
-        return luchador.danioSpecial() + danioSuper;
-    }
+        return luchador.danioSpecial() + danioSpecial;
+    }    
 }

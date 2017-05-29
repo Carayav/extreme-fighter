@@ -2,7 +2,9 @@ package Strategies;
 
 public class IAgil extends Strategy { 
 
-    private final int danio = 75;
+    public IAgil() {
+        this.danio = 75;
+    }
 
     @Override
     public int getDanio(){

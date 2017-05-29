@@ -4,7 +4,7 @@ import Person.Luchador;
 
 public abstract class Apoyo extends Luchador{
     
-    protected int danioSuper;
+    protected int danioSpecial;
     protected Luchador luchador;    
     private final String strSpecial = "NadaSuper";
     

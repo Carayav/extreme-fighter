@@ -24,7 +24,7 @@ public class FightEngine {
 	opcion = Integer.parseInt(seleccion.nextLine());
 	
 	System.out.println(opcion);
-	switch(opcion) {
+	switch(opcion) {            
             case 1: luchador = new ChoroPortenho(); //magico
                 break;
             case 2: luchador = new MineroWarrior(); //fuerte

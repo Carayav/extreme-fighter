@@ -1,25 +1,30 @@
 package Person;
 
-import Strategies.IAgil;
+import Strategies.*;
 
 public class GorrionDeConchali extends Luchador{
-	         
-        public GorrionDeConchali(){
-            Init("GORRION DE CONCHALI!!!!", "agil", new IAgil());
-        }    
     
-	public String golpear(){
-		return("PUÑO CEBOLLERO!!!");}
-	        
-	public String patear(){
-		return("PATADA LACRIMOGENA!!!");}
-
-	public String saltar(){
-		return("PIQUERO ROMANTICO!!!");	}
-       
-        public int danioSpecial(){
-            return danio;
-        }
-        
-        
+    public GorrionDeConchali(){
+        Init("GORRION DE CONCHALI!!!!", "agil", new IAgil());
+    }
+    
+    @Override
+    public String golpear(){
+        return("PUÑO CEBOLLERO!!!");
+    }
+    
+    @Override
+    public String patear(){
+        return("PATADA LACRIMOGENA!!!");
+    }
+    
+    @Override
+    public String saltar(){
+        return("PIQUERO ROMANTICO!!!");
+    }
+    
+    @Override
+    public int danioSpecial(){
+        return danio;
+    }   
 }

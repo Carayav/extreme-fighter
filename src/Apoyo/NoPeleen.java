@@ -6,15 +6,17 @@ public class NoPeleen extends Apoyo{
     
     public NoPeleen(Luchador luchador){
         this.luchador = luchador;
-        this.danioSuper = 30;
+        this.danioSpecial = 30;
     }
     
+    @Override
     public String getSpecialString() {
         return luchador.getSpecialString() + " Especial NoPeleen";
     }
         
+    @Override
     public int danioSpecial() {
-        return luchador.danioSpecial() + danioSuper;
+        return luchador.danioSpecial() + danioSpecial;
     }
     
 }

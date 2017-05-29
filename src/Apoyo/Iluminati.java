@@ -6,14 +6,14 @@ public class Iluminati extends Apoyo{
     
     public Iluminati(Luchador luchador){
         this.luchador = luchador;
-        this.danioSuper = 40;
+        this.danioSpecial = 40;
     }
     
+    @Override
     public String getSpecialString() {
-        return luchador.getSpecialString() + " Especial Illuminati";
-    }
+        return luchador.getSpecialString() + " Especial Illuminati";}
     
+    @Override
     public int danioSpecial() {
-        return luchador.danioSpecial() + danioSuper;
-    }
+        return luchador.danioSpecial() + danioSpecial;}
 }
